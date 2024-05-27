@@ -8,8 +8,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     console.log('Contraseña:', password);
 
     if (username === 'Daniel' && password === '12345') {
-        alert('Inicio de sesión exitoso');
+        alert('Bienvenido Daniel',+username);
     } else {
-        alert('Nombre de usuario o contraseña incorrectos');
+        alert('Error de usuario y/o contraseña');
     }
 });
