@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio con Validacion</title>
+    <style>
+        .login-form {
+            background: #fff;
+            padding: 10px;
+
+            box-shadow: 0 0 10px rgba(214, 65, 65, 0.1);
+        }
+        label, input {
+            display: block;
+            width: 10%;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            border: 1px solid #9d2020;
+        }
+        button {
+            padding: 10px;
+            background-color: #3aa64c;
+            color: rgb(81, 5, 5);
+            border: none;   
+
+            cursor: pointer;
+            width: 10%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
